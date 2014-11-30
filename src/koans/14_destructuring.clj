@@ -41,4 +41,4 @@
 
   "All together now!"
   (= "Test Testerson, 123 Test Lane, Testerville, TX"
-     (___ ["Test" "Testerson"] test-address)))
+     ((fn [[x y] z] (str x " " y ", " (z :street-address) ", " (z :city) ", " (z :state))) ["Test" "Testerson"] test-address)))
